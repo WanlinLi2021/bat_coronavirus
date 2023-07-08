@@ -59,10 +59,13 @@ def downFromNCBI(db_type, accession_list, file_name):
 # downFromNCBI("protein", orf1ab_ParaFit, orf1ab_ParaFit_f)
 # downFromNCBI("protein", spike_ParaFit, spike_ParaFit_f)
 
-print("===================================================================================================")
+# print("===================================================================================================")
+# For Host
 
-p_a_b = ['AGC74164', 'AGC74170']
+paco = pd.read_csv("filterdByPACo.csv")
+paco_host_lt = set(paco.Host_Accession.to_list())
+print("PACo, number of related host", len(paco_host_lt))
+print("Host List: ", paco_host_lt)
 
-
-add_f = "1for_add.fasta"
-downFromNCBI("protein", p_a_b, add_f)
+host_f = "host_paco.fasta"
+downFromNCBI("nucleotide", paco_host_lt, host_f)

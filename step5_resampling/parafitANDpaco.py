@@ -12,6 +12,7 @@ print(len(paco_v_lt))
 
 paco_host_lt = set(paco.Host_Accession.to_list())
 print("PACo, number of related host", len(paco_host_lt))
+print("Host List: ", paco_host_lt)
 
 df = paco.drop_duplicates()
 print("PACo dataset without duplicate", len(df))
