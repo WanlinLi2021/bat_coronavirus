@@ -1,7 +1,5 @@
-thresholds:
-  rf_threshold: 100
 params:
   step_size: 10
   window_size: 100
-  seq_file: config/1aln_spike_withID.fasta
+  seq_file: config/1aln_orf1ab_withID.fasta
   
