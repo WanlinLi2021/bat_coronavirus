@@ -1,0 +1,76 @@
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 13-Jul-2023 08:17:33 as follows:
+
+raxml-ng --all --model Blosum62+G --msa results/windows/window_position_3970_4070.fa --prefix results/RaxMl/3970_4070 --msa-format FASTA --tree pars{5} --seed 239 --threads 2 --force --bs-trees 100 --bs-metric fbp
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): parsimony (5)
+  bootstrap replicates: 100
+  random seed: 239
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: SSE3
+  parallelization: PTHREADS (2 threads), thread pinning: OFF
+
+WARNING: Running in FORCE mode: all safety checks are disabled!
+
+[00:00:00] Reading alignment from file: results/windows/window_position_3970_4070.fa
+[00:00:00] Loaded alignment with 47 taxa and 100 sites
+
+Alignment comprises 1 partitions and 61 patterns
+
+Partition 0: noname
+Model: BLOSUM62+G4m
+Alignment sites / patterns: 100 / 61
+Gaps: 0.00 %
+Invariant sites: 54.00 %
+
+
+NOTE: Binary MSA file created: results/RaxMl/3970_4070.raxml.rba
+
+[00:00:00] Generating 5 parsimony starting tree(s) with 47 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 31 / 2480
+
+Starting ML tree search with 5 distinct starting trees
+
+[00:01:14] ML tree search #1, logLikelihood: -568.666811
+[00:01:57] ML tree search #2, logLikelihood: -568.665806
+[00:02:41] ML tree search #3, logLikelihood: -568.665806
+[00:03:26] ML tree search #4, logLikelihood: -568.665812
+[00:04:12] ML tree search #5, logLikelihood: -568.665818
+
+[00:04:12] ML tree search completed, best tree logLH: -568.665806
+
+[00:04:12] Starting bootstrapping analysis with 100 replicates.
+
+[00:05:11] Bootstrap tree #1, logLikelihood: -553.954478
+[00:06:26] Bootstrap tree #2, logLikelihood: -542.607831
+[00:07:11] Bootstrap tree #3, logLikelihood: -545.111556
+[00:08:16] Bootstrap tree #4, logLikelihood: -541.461155
+[00:09:02] Bootstrap tree #5, logLikelihood: -579.984607
+[00:16:19] Bootstrap tree #6, logLikelihood: -512.797646
+[00:18:46] Bootstrap tree #7, logLikelihood: -495.326158
+[00:19:42] Bootstrap tree #8, logLikelihood: -600.133119
+[00:20:32] Bootstrap tree #9, logLikelihood: -519.263295
+[00:21:24] Bootstrap tree #10, logLikelihood: -616.720495
+[00:22:25] Bootstrap tree #11, logLikelihood: -634.801671
+[00:23:19] Bootstrap tree #12, logLikelihood: -572.322881
+[00:24:11] Bootstrap tree #13, logLikelihood: -529.910723
+[00:25:04] Bootstrap tree #14, logLikelihood: -529.273511
+[00:26:11] Bootstrap tree #15, logLikelihood: -569.368785
+[00:27:04] Bootstrap tree #16, logLikelihood: -576.022973
+[00:27:55] Bootstrap tree #17, logLikelihood: -501.730695
+[00:28:52] Bootstrap tree #18, logLikelihood: -576.965799
+[00:29:54] Bootstrap tree #19, logLikelihood: -537.120466
+[00:30:48] Bootstrap tree #20, logLikelihood: -555.771028
+[00:31:48] Bootstrap tree #21, logLikelihood: -564.476067
