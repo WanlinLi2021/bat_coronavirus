@@ -4789,3 +4789,291 @@ rule runRaxML:
     wildcards: position=4030_4130
     resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
 
+[Thu Jul 13 22:19:38 2023]
+Finished job 581.
+295 of 908 steps (32%) done
+Removing temporary output results/RAxML/1930_2030.raxml.bestModel.
+Removing temporary output results/RAxML/1930_2030.raxml.bootstraps.
+Removing temporary output results/RAxML/1930_2030.raxml.log.
+Removing temporary output results/RAxML/1930_2030.raxml.mlTrees.
+Removing temporary output results/RAxML/1930_2030.raxml.rba.
+Removing temporary output results/RAxML/1930_2030.raxml.startTree.
+Removing temporary output results/RAxML/1930_2030.raxml.support.
+Select jobs to execute...
+
+[Thu Jul 13 22:19:38 2023]
+rule rf_distance:
+    input: results/RAxML/1930_2030.raxml.bestTree
+    output: results/rf/1930_2030.rf_ete
+    jobid: 580
+    reason: Missing output files: results/rf/1930_2030.rf_ete; Input files updated by another job: results/RAxML/1930_2030.raxml.bestTree
+    wildcards: position=1930_2030
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:19:42 2023]
+Finished job 580.
+296 of 908 steps (33%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:19:42 2023]
+rule sliding_windows:
+    output: results/windows/window_position_4450_4550.fa
+    jobid: 1338
+    reason: Missing output files: results/windows/window_position_4450_4550.fa
+    wildcards: position=4450_4550
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:19:46 2023]
+Finished job 1338.
+297 of 908 steps (33%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:19:46 2023]
+rule runRaxML:
+    input: results/windows/window_position_4450_4550.fa
+    output: results/RAxML/4450_4550.raxml.bestModel, results/RAxML/4450_4550.raxml.bestTree, results/RAxML/4450_4550.raxml.bootstraps, results/RAxML/4450_4550.raxml.log, results/RAxML/4450_4550.raxml.mlTrees, results/RAxML/4450_4550.raxml.rba, results/RAxML/4450_4550.raxml.startTree, results/RAxML/4450_4550.raxml.support
+    jobid: 1337
+    reason: Missing output files: results/RAxML/4450_4550.raxml.bestTree; Input files updated by another job: results/windows/window_position_4450_4550.fa
+    wildcards: position=4450_4550
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:33:44 2023]
+Finished job 92.
+298 of 908 steps (33%) done
+Removing temporary output results/RAxML/300_400.raxml.bestModel.
+Removing temporary output results/RAxML/300_400.raxml.bootstraps.
+Removing temporary output results/RAxML/300_400.raxml.log.
+Removing temporary output results/RAxML/300_400.raxml.mlTrees.
+Removing temporary output results/RAxML/300_400.raxml.rba.
+Removing temporary output results/RAxML/300_400.raxml.startTree.
+Removing temporary output results/RAxML/300_400.raxml.support.
+Select jobs to execute...
+
+[Thu Jul 13 22:33:44 2023]
+rule rf_distance:
+    input: results/RAxML/300_400.raxml.bestTree
+    output: results/rf/300_400.rf_ete
+    jobid: 91
+    reason: Missing output files: results/rf/300_400.rf_ete; Input files updated by another job: results/RAxML/300_400.raxml.bestTree
+    wildcards: position=300_400
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:33:48 2023]
+Finished job 91.
+299 of 908 steps (33%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:33:48 2023]
+rule sliding_windows:
+    output: results/windows/window_position_3750_3850.fa
+    jobid: 1128
+    reason: Missing output files: results/windows/window_position_3750_3850.fa
+    wildcards: position=3750_3850
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:33:51 2023]
+Finished job 1128.
+300 of 908 steps (33%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:33:51 2023]
+rule runRaxML:
+    input: results/windows/window_position_3750_3850.fa
+    output: results/RAxML/3750_3850.raxml.bestModel, results/RAxML/3750_3850.raxml.bestTree, results/RAxML/3750_3850.raxml.bootstraps, results/RAxML/3750_3850.raxml.log, results/RAxML/3750_3850.raxml.mlTrees, results/RAxML/3750_3850.raxml.rba, results/RAxML/3750_3850.raxml.startTree, results/RAxML/3750_3850.raxml.support
+    jobid: 1127
+    reason: Missing output files: results/RAxML/3750_3850.raxml.bestTree; Input files updated by another job: results/windows/window_position_3750_3850.fa
+    wildcards: position=3750_3850
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:37:19 2023]
+Finished job 917.
+301 of 908 steps (33%) done
+Removing temporary output results/RAxML/3050_3150.raxml.bestModel.
+Removing temporary output results/RAxML/3050_3150.raxml.bootstraps.
+Removing temporary output results/RAxML/3050_3150.raxml.log.
+Removing temporary output results/RAxML/3050_3150.raxml.mlTrees.
+Removing temporary output results/RAxML/3050_3150.raxml.rba.
+Removing temporary output results/RAxML/3050_3150.raxml.startTree.
+Removing temporary output results/RAxML/3050_3150.raxml.support.
+Select jobs to execute...
+
+[Thu Jul 13 22:37:19 2023]
+rule rf_distance:
+    input: results/RAxML/3050_3150.raxml.bestTree
+    output: results/rf/3050_3150.rf_ete
+    jobid: 916
+    reason: Missing output files: results/rf/3050_3150.rf_ete; Input files updated by another job: results/RAxML/3050_3150.raxml.bestTree
+    wildcards: position=3050_3150
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:37:22 2023]
+Finished job 916.
+302 of 908 steps (33%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:37:22 2023]
+rule sliding_windows:
+    output: results/windows/window_position_1610_1710.fa
+    jobid: 486
+    reason: Missing output files: results/windows/window_position_1610_1710.fa
+    wildcards: position=1610_1710
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:37:26 2023]
+Finished job 486.
+303 of 908 steps (33%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:37:26 2023]
+rule runRaxML:
+    input: results/windows/window_position_1610_1710.fa
+    output: results/RAxML/1610_1710.raxml.bestModel, results/RAxML/1610_1710.raxml.bestTree, results/RAxML/1610_1710.raxml.bootstraps, results/RAxML/1610_1710.raxml.log, results/RAxML/1610_1710.raxml.mlTrees, results/RAxML/1610_1710.raxml.rba, results/RAxML/1610_1710.raxml.startTree, results/RAxML/1610_1710.raxml.support
+    jobid: 485
+    reason: Missing output files: results/RAxML/1610_1710.raxml.bestTree; Input files updated by another job: results/windows/window_position_1610_1710.fa
+    wildcards: position=1610_1710
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:40:07 2023]
+Finished job 260.
+304 of 908 steps (33%) done
+Removing temporary output results/RAxML/860_960.raxml.bestModel.
+Removing temporary output results/RAxML/860_960.raxml.bootstraps.
+Removing temporary output results/RAxML/860_960.raxml.log.
+Removing temporary output results/RAxML/860_960.raxml.mlTrees.
+Removing temporary output results/RAxML/860_960.raxml.rba.
+Removing temporary output results/RAxML/860_960.raxml.startTree.
+Removing temporary output results/RAxML/860_960.raxml.support.
+Select jobs to execute...
+
+[Thu Jul 13 22:40:07 2023]
+rule rf_distance:
+    input: results/RAxML/860_960.raxml.bestTree
+    output: results/rf/860_960.rf_ete
+    jobid: 259
+    reason: Missing output files: results/rf/860_960.rf_ete; Input files updated by another job: results/RAxML/860_960.raxml.bestTree
+    wildcards: position=860_960
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:40:10 2023]
+Finished job 259.
+305 of 908 steps (34%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:40:10 2023]
+rule sliding_windows:
+    output: results/windows/window_position_3610_3710.fa
+    jobid: 1086
+    reason: Missing output files: results/windows/window_position_3610_3710.fa
+    wildcards: position=3610_3710
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:40:14 2023]
+Finished job 1086.
+306 of 908 steps (34%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:40:14 2023]
+rule runRaxML:
+    input: results/windows/window_position_3610_3710.fa
+    output: results/RAxML/3610_3710.raxml.bestModel, results/RAxML/3610_3710.raxml.bestTree, results/RAxML/3610_3710.raxml.bootstraps, results/RAxML/3610_3710.raxml.log, results/RAxML/3610_3710.raxml.mlTrees, results/RAxML/3610_3710.raxml.rba, results/RAxML/3610_3710.raxml.startTree, results/RAxML/3610_3710.raxml.support
+    jobid: 1085
+    reason: Missing output files: results/RAxML/3610_3710.raxml.bestTree; Input files updated by another job: results/windows/window_position_3610_3710.fa
+    wildcards: position=3610_3710
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:42:17 2023]
+Finished job 1016.
+307 of 908 steps (34%) done
+Removing temporary output results/RAxML/3380_3480.raxml.bestModel.
+Removing temporary output results/RAxML/3380_3480.raxml.bootstraps.
+Removing temporary output results/RAxML/3380_3480.raxml.log.
+Removing temporary output results/RAxML/3380_3480.raxml.mlTrees.
+Removing temporary output results/RAxML/3380_3480.raxml.rba.
+Removing temporary output results/RAxML/3380_3480.raxml.startTree.
+Removing temporary output results/RAxML/3380_3480.raxml.support.
+Select jobs to execute...
+
+[Thu Jul 13 22:42:17 2023]
+rule rf_distance:
+    input: results/RAxML/3380_3480.raxml.bestTree
+    output: results/rf/3380_3480.rf_ete
+    jobid: 1015
+    reason: Missing output files: results/rf/3380_3480.rf_ete; Input files updated by another job: results/RAxML/3380_3480.raxml.bestTree
+    wildcards: position=3380_3480
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:42:21 2023]
+Finished job 1015.
+308 of 908 steps (34%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:42:21 2023]
+rule sliding_windows:
+    output: results/windows/window_position_910_1010.fa
+    jobid: 276
+    reason: Missing output files: results/windows/window_position_910_1010.fa
+    wildcards: position=910_1010
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 22:42:24 2023]
+Finished job 276.
+309 of 908 steps (34%) done
+Select jobs to execute...
+
+[Thu Jul 13 22:42:24 2023]
+rule runRaxML:
+    input: results/windows/window_position_910_1010.fa
+    output: results/RAxML/910_1010.raxml.bestModel, results/RAxML/910_1010.raxml.bestTree, results/RAxML/910_1010.raxml.bootstraps, results/RAxML/910_1010.raxml.log, results/RAxML/910_1010.raxml.mlTrees, results/RAxML/910_1010.raxml.rba, results/RAxML/910_1010.raxml.startTree, results/RAxML/910_1010.raxml.support
+    jobid: 275
+    reason: Missing output files: results/RAxML/910_1010.raxml.bestTree; Input files updated by another job: results/windows/window_position_910_1010.fa
+    wildcards: position=910_1010
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 23:07:41 2023]
+Finished job 554.
+310 of 908 steps (34%) done
+Removing temporary output results/RAxML/1840_1940.raxml.bestModel.
+Removing temporary output results/RAxML/1840_1940.raxml.bootstraps.
+Removing temporary output results/RAxML/1840_1940.raxml.log.
+Removing temporary output results/RAxML/1840_1940.raxml.mlTrees.
+Removing temporary output results/RAxML/1840_1940.raxml.rba.
+Removing temporary output results/RAxML/1840_1940.raxml.startTree.
+Removing temporary output results/RAxML/1840_1940.raxml.support.
+Select jobs to execute...
+
+[Thu Jul 13 23:07:41 2023]
+rule rf_distance:
+    input: results/RAxML/1840_1940.raxml.bestTree
+    output: results/rf/1840_1940.rf_ete
+    jobid: 553
+    reason: Missing output files: results/rf/1840_1940.rf_ete; Input files updated by another job: results/RAxML/1840_1940.raxml.bestTree
+    wildcards: position=1840_1940
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 23:07:45 2023]
+Finished job 553.
+311 of 908 steps (34%) done
+Select jobs to execute...
+
+[Thu Jul 13 23:07:45 2023]
+rule sliding_windows:
+    output: results/windows/window_position_70_170.fa
+    jobid: 24
+    reason: Missing output files: results/windows/window_position_70_170.fa; Params have changed since last execution
+    wildcards: position=70_170
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
+[Thu Jul 13 23:07:48 2023]
+Finished job 24.
+312 of 908 steps (34%) done
+Select jobs to execute...
+
+[Thu Jul 13 23:07:48 2023]
+rule runRaxML:
+    input: results/windows/window_position_70_170.fa
+    output: results/RAxML/70_170.raxml.bestModel, results/RAxML/70_170.raxml.bestTree, results/RAxML/70_170.raxml.bootstraps, results/RAxML/70_170.raxml.log, results/RAxML/70_170.raxml.mlTrees, results/RAxML/70_170.raxml.rba, results/RAxML/70_170.raxml.startTree, results/RAxML/70_170.raxml.support
+    jobid: 23
+    reason: Missing output files: results/RAxML/70_170.raxml.bestTree; Input files updated by another job: results/windows/window_position_70_170.fa
+    wildcards: position=70_170
+    resources: tmpdir=/var/folders/jm/5k15km0505vdkj2xt4zkphy40000gn/T
+
