@@ -1,0 +1,88 @@
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 15-Jul-2023 21:46:00 as follows:
+
+raxml-ng --all --model Blosum62+G --msa results/windows/window_position_1420_1520.fa --prefix results/RaxMl/1420_1520 --msa-format FASTA --tree pars{5} --seed 239 --threads 2 --force --bs-trees 100 --bs-metric fbp
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): parsimony (5)
+  bootstrap replicates: 100
+  random seed: 239
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: SSE3
+  parallelization: PTHREADS (2 threads), thread pinning: OFF
+
+WARNING: Running in FORCE mode: all safety checks are disabled!
+
+[00:00:00] Reading alignment from file: results/windows/window_position_1420_1520.fa
+[00:00:00] Loaded alignment with 47 taxa and 100 sites
+
+Alignment comprises 1 partitions and 87 patterns
+
+Partition 0: noname
+Model: BLOSUM62+G4m
+Alignment sites / patterns: 100 / 87
+Gaps: 0.00 %
+Invariant sites: 22.00 %
+
+
+NOTE: Binary MSA file created: results/RaxMl/1420_1520.raxml.rba
+
+[00:00:00] Generating 5 parsimony starting tree(s) with 47 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 44 / 3520
+
+Starting ML tree search with 5 distinct starting trees
+
+[00:00:56] ML tree search #1, logLikelihood: -801.171565
+[00:01:52] ML tree search #2, logLikelihood: -801.175728
+[00:02:49] ML tree search #3, logLikelihood: -801.175504
+[00:03:47] ML tree search #4, logLikelihood: -801.173950
+[00:05:52] ML tree search #5, logLikelihood: -801.171747
+
+[00:05:52] ML tree search completed, best tree logLH: -801.171565
+
+[00:05:52] Starting bootstrapping analysis with 100 replicates.
+
+[00:06:58] Bootstrap tree #1, logLikelihood: -786.969937
+[00:08:01] Bootstrap tree #2, logLikelihood: -769.887873
+[00:09:18] Bootstrap tree #3, logLikelihood: -853.702164
+[00:10:10] Bootstrap tree #4, logLikelihood: -784.070180
+[00:11:05] Bootstrap tree #5, logLikelihood: -758.995116
+[00:11:59] Bootstrap tree #6, logLikelihood: -757.351874
+[00:13:04] Bootstrap tree #7, logLikelihood: -779.960360
+[00:14:03] Bootstrap tree #8, logLikelihood: -771.125568
+[00:15:11] Bootstrap tree #9, logLikelihood: -841.977812
+[00:16:22] Bootstrap tree #10, logLikelihood: -759.575204
+[00:17:47] Bootstrap tree #11, logLikelihood: -849.202706
+[00:18:52] Bootstrap tree #12, logLikelihood: -783.767226
+[00:19:51] Bootstrap tree #13, logLikelihood: -733.157055
+[00:20:58] Bootstrap tree #14, logLikelihood: -800.821660
+[00:22:00] Bootstrap tree #15, logLikelihood: -805.810916
+[00:22:49] Bootstrap tree #16, logLikelihood: -846.826405
+[00:23:49] Bootstrap tree #17, logLikelihood: -772.459438
+[00:24:48] Bootstrap tree #18, logLikelihood: -820.599001
+[00:25:48] Bootstrap tree #19, logLikelihood: -791.106287
+[00:27:05] Bootstrap tree #20, logLikelihood: -844.269012
+[00:28:06] Bootstrap tree #21, logLikelihood: -802.348036
+[00:29:00] Bootstrap tree #22, logLikelihood: -757.174083
+[00:29:59] Bootstrap tree #23, logLikelihood: -827.425751
+[00:30:59] Bootstrap tree #24, logLikelihood: -758.522466
+[00:32:10] Bootstrap tree #25, logLikelihood: -846.002503
+[00:32:58] Bootstrap tree #26, logLikelihood: -705.023041
+[00:33:56] Bootstrap tree #27, logLikelihood: -767.072282
+[00:34:48] Bootstrap tree #28, logLikelihood: -721.231896
+[00:35:46] Bootstrap tree #29, logLikelihood: -806.213155
+[00:36:41] Bootstrap tree #30, logLikelihood: -795.430043
+[00:37:43] Bootstrap tree #31, logLikelihood: -780.691267
+[00:38:40] Bootstrap tree #32, logLikelihood: -826.728210
+[00:39:49] Bootstrap tree #33, logLikelihood: -785.295153
