@@ -52,12 +52,12 @@ def rfForWindows(folder_seqTree, file_refTree, outputCSV):
 trees_folder_spike = '../step10_pipeline/output_spike_100_10step/RAxML'
 trees_folder_pp1ab = '../step10_pipeline/output_pp1ab_100_10step/RAxML'
 # reference file
-file_refTree = 'hostTree_rename.newick'
+file_refTree = 'hostTree.newick'
 # output file
 spike_rf_csv = "rf_spike.csv"
 pp1ab_rf_csv = "rf_pp1ab.csv"
 # print(os.listdir(trees_folder_pp1ab))
 
 
-# rfForWindows(trees_folder_spike, file_refTree, spike_rf_csv)
+rfForWindows(trees_folder_spike, file_refTree, spike_rf_csv)
 rfForWindows(trees_folder_pp1ab, file_refTree, pp1ab_rf_csv)

@@ -57,8 +57,9 @@ ggtree(tree_virus) + geom_tiplab(size = 3, hjust = 1, face = "bold", align = TRU
 Read the two Newick files and create tree objects for each tree.
 
 ```{r}
-tree_bat <- read.newick("bat_besttree_withConfident.nwk", node.label = "support")
-tree_virus <- read.newick("V_Best_tree_with_confidence.nwk",node.label = "support")
+
+tree_bat <- read.newick("bat_besttree_withConfident.nwk")
+tree_virus <- read.newick("V_Best_tree_with_confidence.nwk")
 ```
 
 2. Prepare data for links between the trees
@@ -82,11 +83,12 @@ tree_bat$tip.label
 
 ```{r}
 # Create the tree plot for tree1
-tree_bat@data$support1<-ifelse(tree_bat@data$support<75,NA,tree_bat@data$support)
+#tree_bat@data$support1<-ifelse(tree_bat@data$support<75,NA,tree_bat@data$support)
 
 plot_tree_bat <- ggtree(tree_bat) +
   geom_tiplab(size = 3, hjust = -0.01, face = "bold", align = TRUE) +
-  theme_tree2()  + xlim(NA,2.5) + geom_text(aes(label=support1),hjust=-0.5,size = 3,face = "bold") +
+  theme_tree2()  + xlim(NA,2.5) + 
+  #geom_text(aes(label=support1),hjust=-0.5,size = 3,face = "bold") +
   theme(legend.position = "none")
 plot_tree_bat
 
@@ -94,11 +96,12 @@ plot_tree_bat
 
 
 ```{r}
-tree_virus@data$support2<-ifelse(tree_virus@data$support<75,NA,tree_virus@data$support)
+#tree_virus@data$support2<-ifelse(tree_virus@data$support<75,NA,tree_virus@data$support)
 
 plot_tree_virus2 <- ggtree(tree_virus) +
   geom_tiplab(size = 3, hjust = 1, face = "bold", align = TRUE) + scale_x_reverse(limits = c(2.5, NA)) + ylim(NA,47)  +
-  theme_tree2() + geom_text(aes(label=support2),hjust=-0.3,size = 3,face = "bold", nudge_y = 0.5,  nudge_x = -0.01) +
+  theme_tree2() + 
+  #geom_text(aes(label=support2),hjust=-0.3,size = 3,face = "bold", nudge_y = 0.5,  nudge_x = -0.01) +
   theme(legend.position = "none")
 
 plot_tree_virus2
@@ -115,7 +118,7 @@ plot_tree_virus <- ggtree(tree_virus) +
   scale_x_reverse(breaks = x_breaks, labels = x_breaks, limits = c(2.5, -1)) +
   ylim(NA, 47) +
   theme_tree2() +
-  geom_text(aes(label = support2), hjust = -0.3, size = 3, face = "bold", nudge_y = 0.5, nudge_x = -0.01) +
+  #geom_text(aes(label = support2), hjust = -0.3, size = 3, face = "bold", nudge_y = 0.5, nudge_x = -0.01) +
   theme(legend.position = "none")
 
 plot_tree_virus
@@ -128,9 +131,9 @@ plot_tree_virus
 # Create the plot with links between the tips
 combined_plot <- plot_tree_bat +
   plot_tree_virus 
-  #+ geom_segment(data = df_link, aes(x = Host, xend = Virus, y = Host, yend = Virus), color = "blue", alpha = 0.5)
-
-combined_plot  
+  #geom_segment(data = df_link, aes(x = Host, xend = Virus, y = Host, yend = Virus), color = "blue", alpha = 0.5)
+ 
+combined_plot
 ```
 
 
@@ -147,6 +150,24 @@ link <- cbind(df_link$Host, df_link$Virus)
 link
 ```
 
+```{r}
+library(ape)
+library(phytools)
+```
+
+```{r}
+tree_bat <- read.newick("bat_besttree_withConfident.nwk")
+tree_virus <- read.newick("V_Best_tree_with_confidence.nwk")
+```
+
+```{r}
+tree_bat$tip.label
+```
+
+```{r}
+tree_virus$tip.label
+```
+
 
 
 ```{r}
@@ -154,6 +175,26 @@ cophyloplot(tree_bat, tree_virus, assoc = link,
             length.line = 4, space = 28, gap = 3)
 ```
 
+```{r}
+# Create the tree plot for tree_bat
+plot_tree_bat <- ggtree(tree_bat) +
+  geom_tiplab(size = 3, hjust = 1, face = "bold", align = TRUE) +
+  theme_tree2() +
+  theme(legend.position = "none")
+
+# Create the tree plot for tree_virus
+plot_tree_virus <- ggtree(tree_virus) +
+  geom_tiplab(size = 3, hjust = 1, face = "bold", align = TRUE) +
+  theme_tree2() +
+  theme(legend.position = "none")
+
+# Combine the tree plots and add links between the nodes with support values
+combined_plot <- plot_tree_bat +
+  plot_tree_virus +
+  geom_segment(data = df_link, aes(x = Host, xend = Virus, y = Host, yend = Virus),
+               color = "blue", alpha = 0.5)
+#ggsave("cophyloplot_with_support.png", combined_plot, width = 12, height = 8, units = "in")
+```
 
 
 
